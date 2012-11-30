@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rebuild_numbers=`echo $(date +%y.%m.%d) | grep -Eo '.{7}$' | sed 's/.0/./g'`;
+rebuild_numbers=`echo $(date +%y.%m.%d) | grep -Eo '.{7}$' | sed 's/\.0/./g'`;
 build_prop_file=$1;
 # other arguments: # product=$2 # number=$3 # version=$4
 
